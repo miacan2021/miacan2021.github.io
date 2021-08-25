@@ -1,0 +1,13 @@
+{
+  "name": "mid-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass css/style.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
