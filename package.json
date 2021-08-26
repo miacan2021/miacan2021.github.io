@@ -6,7 +6,8 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "compile:sass": "node-sass css/style.scss css/style.css -w"
+    "compile:sass": "node-sass css/style.scss css/style.css -w",
+    "compile:product": "node-sass css/product.scss css/product.css -w"
   },
   "author": "",
   "license": "ISC"

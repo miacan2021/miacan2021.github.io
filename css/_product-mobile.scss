@@ -1,0 +1,181 @@
+$pink: #FF75A0;
+$green: #EAFFD0;
+$white: #fff;
+$blue: #95E1D3;
+$black: #000;
+$yellow: #FCE38A;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+.ad{
+    background-color: $green;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & p{
+        margin:0;
+        font-size: 0.8rem;
+    }
+}
+
+// mobile-navigation
+.shop-name{
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: $white;
+    font-size: 2rem;
+}
+
+.nav{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    background-color: $green;
+    width: 100vw;
+    height: 100%;
+    z-index: 2000;
+    transition: all ease-in-out 1s;
+    clip-path: circle(200px at -150% -20%);
+    overflow-y: scroll;
+   
+    & ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        & li{
+            list-style: none;
+            margin-top: 5rem;
+            & .cart{
+                visibility: hidden;
+            }
+            & a{
+                cursor: pointer;
+                text-decoration: none;
+                color: $black;
+            }
+        }
+       
+    }
+    & .mobile-sns{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        cursor: pointer;
+        & li:nth-child(1){
+            margin-right: 2rem;
+        }
+    }
+}
+
+
+.mobile-menu-icon {
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 3000;
+    top: 3rem;
+    left: 0.5rem;
+  
+    & > span {
+        background-color: $white;
+        width: 35px;
+        height: 2px;
+        display: block;
+        margin-bottom: 9px;
+        transition: all 0.8s;
+        &:last-child {
+          margin-bottom: 0;
+        }
+    }
+  }
+
+  .menu-open {
+    & .nav{
+        visibility: visible;
+        clip-path: circle(1500px at 90% -20%);
+    }
+
+    & .mobile-menu-icon{
+    & > span{
+      background-color: $blue;
+  
+      &:nth-child(1) {
+        transform: translateY(11px) rotate(135deg);
+      }
+      &:nth-child(2) {
+        transform: translateX(-17px) scaleX(0);
+      }
+      &:nth-child(3) {
+        transform: translateY(-11px) rotate(-135deg);
+      }
+    }
+  }
+  }
+
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 5rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: $blue;
+    color: $white;
+    margin: 0;
+}
+
+#new, #best, #season, #lollipop{
+    position: relative;
+    & h2{
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+    color: $blue;
+    }
+}
+
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 17rem;
+    margin: 0 auto;
+    border: 2px solid $pink;
+    cursor: pointer;
+    border-radius: 3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+   
+    & img{
+            height: 10rem;
+            width: 10rem;
+            object-fit: contain;
+            overflow: hidden;
+        }
+    & p{
+        color: $pink;
+        }
+    & a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height:100%;
+            width: 100%;
+        }
+    }
+
