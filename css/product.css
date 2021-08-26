@@ -197,7 +197,8 @@ footer {
     flex: 3 3 5rem;
     height: 14rem;
     padding-top: 1rem;
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    transition: all ease 0.5s; }
     .item img {
       height: 10rem;
       width: 10rem;
@@ -213,6 +214,8 @@ footer {
       width: 100%; }
     .item:last-child {
       margin-bottom: 10rem; }
+    .item:hover {
+      transform: translateY(-1rem); }
   footer {
     width: 100vw;
     height: 10rem;
