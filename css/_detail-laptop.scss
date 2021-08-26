@@ -1,0 +1,178 @@
+$pink: #FF75A0;
+$green: #EAFFD0;
+$white: #fff;
+$blue: #95E1D3;
+$black: #000;
+$yellow: #FCE38A;
+
+
+
+.ad{
+    & p{
+        font-size: 1rem;
+    }
+}
+
+
+.mobile-menu-icon{
+    display: none;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 20000;
+    background-color: $pink;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 2px dotted $white;
+}
+
+
+.nav {
+    position: absolute;
+    visibility: visible;
+    background-color: transparent;
+    width: 95vw;
+    height: 10rem;
+    top: -3rem;
+    z-index: 2000;
+    overflow-y: visible;
+    clip-path: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    & ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        & li{
+            list-style: none;
+            margin-top: 5rem;
+            margin-left: 1rem;
+            & .cart{
+                visibility: visible;
+                width: 1.5rem;
+                
+            }
+            & a{
+                cursor: pointer;
+                text-decoration: none;
+                color: $white;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    & .mobile-sns{
+        display: none;
+    }
+    & .name{
+        margin: 0;
+        display: inline-block
+
+    }
+}
+
+
+.img-section{
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    margin: 0 auto;
+    & img{
+        width: 25rem;
+        height: 25rem;
+        object-fit: cover;
+    }
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    margin-left: 10rem;
+    & h1{
+        margin-top: 1rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: $pink;
+    }
+    & h2{
+        margin: 0;
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: $pink;
+    }
+    & p{
+        margin:0;
+        color: $pink;
+    }
+    & .count{
+        margin: 2rem 0;
+        display: flex;
+    }
+}
+
+.likes{
+    .line{
+        margin: 5rem 0;
+    }
+    & h2{
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
+     
+}
+
+
+.likes{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    
+    & h2{
+        width: 100%;
+        font-size: 2rem;
+    }
+}
+
+.item {
+    flex: 3 3 5rem;
+     height: 14rem;
+    padding-top: 1rem;
+    margin-right: 1rem;
+    background-color: $white;
+    transition: all ease 0.5s;
+     & img{
+             height: 10rem;
+             width: 10rem;
+             object-fit: contain;
+             overflow: hidden;
+         }
+     & p{
+         color: $pink;
+
+         }
+     & a {
+             position: absolute;
+             top: 0;
+             left: 0;
+             height:100%;
+             width: 100%;
+         }
+         &:last-child{
+             margin-bottom: 10rem;
+         }
+         &:hover{
+            transform: translateY(-1rem);
+         }
+     }
+
+     .back{
+         & button:hover{
+             background-color: $white;
+             color: $yellow;
+             cursor: pointer;
+         }
+     }
