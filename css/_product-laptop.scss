@@ -1,0 +1,145 @@
+$pink: #FF75A0;
+$green: #EAFFD0;
+$white: #fff;
+$blue: #95E1D3;
+$black: #000;
+$yellow: #FCE38A;
+
+
+
+.ad{
+    & p{
+        font-size: 1rem;
+    }
+}
+
+
+.mobile-menu-icon{
+    display: none;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 20000;
+    background-color: $pink;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 2px dotted $white;
+}
+
+
+.nav {
+    position: absolute;
+    visibility: visible;
+    background-color: transparent;
+    width: 95vw;
+    height: 10rem;
+    top: -3rem;
+    z-index: 2000;
+    overflow-y: visible;
+    clip-path: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    & ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        & li{
+            list-style: none;
+            margin-top: 5rem;
+            margin-left: 1rem;
+            & .cart{
+                visibility: visible;
+                width: 1.5rem;
+                
+            }
+            & a{
+                cursor: pointer;
+                text-decoration: none;
+                color: $white;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    & .mobile-sns{
+        display: none;
+    }
+    & .name{
+        margin: 0;
+        display: inline-block
+
+    }
+}
+
+#new, #best, #season, #lollipop{
+    margin: auto;
+    display: flex;
+
+    flex-wrap: wrap;
+    width: 80%;
+    
+    & h2{
+        width: 100%;
+        font-size: 2rem;
+    }
+}
+
+
+.item {
+   flex: 3 3 5rem;
+    height: 14rem;
+   padding-top: 1rem;
+   margin-right: 1rem;
+    & img{
+            height: 10rem;
+            width: 10rem;
+            object-fit: contain;
+            overflow: hidden;
+        }
+    & p{
+        color: $pink;
+        }
+    & a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height:100%;
+            width: 100%;
+        }
+        &:last-child{
+            margin-bottom: 10rem;
+        }
+    }
+
+    footer{
+       
+        width: 100vw;
+        height: 10rem;
+       
+        background-color: $blue;
+        & .laprop-footer{
+            position: relative;
+            top: -3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $blue;
+            & ul{
+                display: flex;
+                list-style: none;
+               
+                & li{
+                    margin-left: 1rem;
+                    & a{
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+   
+    }

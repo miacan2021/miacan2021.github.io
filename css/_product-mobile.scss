@@ -27,12 +27,6 @@ body{
 }
 
 // mobile-navigation
-.shop-name{
-    text-align: center;
-    font-family: 'Montserrat Alternates', sans-serif;
-    color: $white;
-    font-size: 2rem;
-}
 
 .nav{
     visibility: hidden;
@@ -89,7 +83,7 @@ body{
     left: 0.5rem;
   
     & > span {
-        background-color: $white;
+        background-color: $pink;
         width: 35px;
         height: 2px;
         display: block;
@@ -155,7 +149,7 @@ body{
     align-items: center;
     width: 80%;
     height: 17rem;
-    margin: 0 auto;
+    margin: 1rem auto;
     border: 2px solid $pink;
     cursor: pointer;
     border-radius: 3rem;
@@ -178,4 +172,13 @@ body{
             width: 100%;
         }
     }
+footer{
+    background-color: $blue;
+}
 
+.white {
+    background-color: $white;
+}
+.laprop-footer{
+    display: none;
+}

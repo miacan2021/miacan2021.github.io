@@ -15,12 +15,6 @@ body {
     margin: 0;
     font-size: 0.8rem; }
 
-.shop-name {
-  text-align: center;
-  font-family: 'Montserrat Alternates', sans-serif;
-  color: #fff;
-  font-size: 2rem; }
-
 .nav {
   visibility: hidden;
   position: fixed;
@@ -65,7 +59,7 @@ body {
   top: 3rem;
   left: 0.5rem; }
   .mobile-menu-icon > span {
-    background-color: #fff;
+    background-color: #FF75A0;
     width: 35px;
     height: 2px;
     display: block;
@@ -113,7 +107,7 @@ body {
   align-items: center;
   width: 80%;
   height: 17rem;
-  margin: 0 auto;
+  margin: 1rem auto;
   border: 2px solid #FF75A0;
   cursor: pointer;
   border-radius: 3rem;
@@ -131,3 +125,110 @@ body {
     left: 0;
     height: 100%;
     width: 100%; }
+
+footer {
+  background-color: #95E1D3; }
+
+.white {
+  background-color: #fff; }
+
+.laprop-footer {
+  display: none; }
+
+@media (min-width: 1260px) {
+  .ad p {
+    font-size: 1rem; }
+  .mobile-menu-icon {
+    display: none; }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 20000;
+    background-color: #FF75A0;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 2px dotted #fff; }
+  .nav {
+    position: absolute;
+    visibility: visible;
+    background-color: transparent;
+    width: 95vw;
+    height: 10rem;
+    top: -3rem;
+    z-index: 2000;
+    overflow-y: visible;
+    clip-path: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline; }
+    .nav ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .nav ul li {
+        list-style: none;
+        margin-top: 5rem;
+        margin-left: 1rem; }
+        .nav ul li .cart {
+          visibility: visible;
+          width: 1.5rem; }
+        .nav ul li a {
+          cursor: pointer;
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.2rem; }
+    .nav .mobile-sns {
+      display: none; }
+    .nav .name {
+      margin: 0;
+      display: inline-block; }
+  #new, #best, #season, #lollipop {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%; }
+    #new h2, #best h2, #season h2, #lollipop h2 {
+      width: 100%;
+      font-size: 2rem; }
+  .item {
+    flex: 3 3 5rem;
+    height: 14rem;
+    padding-top: 1rem;
+    margin-right: 1rem; }
+    .item img {
+      height: 10rem;
+      width: 10rem;
+      object-fit: contain;
+      overflow: hidden; }
+    .item p {
+      color: #FF75A0; }
+    .item a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; }
+    .item:last-child {
+      margin-bottom: 10rem; }
+  footer {
+    width: 100vw;
+    height: 10rem;
+    background-color: #95E1D3; }
+    footer .laprop-footer {
+      position: relative;
+      top: -3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #95E1D3; }
+      footer .laprop-footer ul {
+        display: flex;
+        list-style: none; }
+        footer .laprop-footer ul li {
+          margin-left: 1rem; }
+          footer .laprop-footer ul li a {
+            color: #fff;
+            text-decoration: none; } }
